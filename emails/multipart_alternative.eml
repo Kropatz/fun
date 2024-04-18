@@ -1,0 +1,22 @@
+From: Kop <kop@kop.at> 
+To: filip <filip@filip.at> 
+Subject: Cool email
+MIME-Version: 1.0 
+Content-Type: multipart/alternative; boundary=boundary42 
+
+
+--boundary42 
+Content-Type: text/plain; charset=us-ascii 
+
+hallo 1
+
+--boundary42 
+Content-Type: text/html; charset=us-ascii 
+
+<h1>HTML OIDA</h1>
+
+--boundary42 
+Content-Type: text/plain; charset=us-ascii 
+
+hallo 2 
+--boundary42-- 
