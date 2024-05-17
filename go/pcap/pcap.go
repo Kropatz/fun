@@ -33,7 +33,7 @@ func main() {
 		go deviceHandler.Listen(quit)
 	}
 	if <-quit {
-		fmt.Println("Quitting...)")
+		fmt.Println("Quitting...")
 		return
 	}
 }

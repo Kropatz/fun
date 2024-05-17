@@ -19,11 +19,13 @@ func (d *DeviceHandler) Listen(quit chan bool) {
 	if err != nil {
     fmt.Println("Error: ", err)
     quit <- true
+    return
 	}
 	err = h.SetBPFFilter(d.Filter)
 	if err != nil {
     fmt.Println("Error: ", err)
     quit <- true
+    return
 	}
 	defer h.Close()
 	d.handle = h
