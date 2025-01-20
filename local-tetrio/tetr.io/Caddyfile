@@ -1,0 +1,18 @@
+localhost {
+	root * .
+	file_server
+	log {
+		#output file caddylog
+		format console
+	}
+	handle /api/* {
+        # Rewrite the URL to strip the /api part
+        #rewrite * /{http.regexp.api.1}
+
+        # Proxy to the correct upstream URL
+		#reverse_proxy http://localhost:8000
+        reverse_proxy https://tetr.io
+	 	    #reverse_proxy https://tetr.io
+        #rewrite * /api{url}
+    }
+}
